@@ -69,7 +69,7 @@ export default {
       var username = this.form.username;
       var password = this.form.password;
       const { dispatch } = this.$store;
-      if (this.form.username && this.form.password) {
+      if (username && password) {
         dispatch("authentication/login", { username, password }); //hook up to action
       }
     }
